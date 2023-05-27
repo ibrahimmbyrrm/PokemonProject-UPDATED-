@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		80FF0AF02A22B5B9002025C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FF0AEF2A22B5B9002025C5 /* AppDelegate.swift */; };
 		80FF0AF22A22B5B9002025C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FF0AF12A22B5B9002025C5 /* SceneDelegate.swift */; };
-		80FF0AF42A22B5B9002025C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FF0AF32A22B5B9002025C5 /* ViewController.swift */; };
 		80FF0AF72A22B5B9002025C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80FF0AF52A22B5B9002025C5 /* Main.storyboard */; };
 		80FF0AF92A22B5B9002025C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80FF0AF82A22B5B9002025C5 /* Assets.xcassets */; };
 		80FF0AFC2A22B5B9002025C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80FF0AFA2A22B5B9002025C5 /* LaunchScreen.storyboard */; };
 		80FF0B072A22B5B9002025C5 /* PokemonWorldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FF0B062A22B5B9002025C5 /* PokemonWorldTests.swift */; };
 		80FF0B112A22B5BA002025C5 /* PokemonWorldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FF0B102A22B5BA002025C5 /* PokemonWorldUITests.swift */; };
 		80FF0B132A22B5BA002025C5 /* PokemonWorldUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FF0B122A22B5BA002025C5 /* PokemonWorldUITestsLaunchTests.swift */; };
+		80FF0B212A22B602002025C5 /* PokemonListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FF0B202A22B602002025C5 /* PokemonListTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +39,6 @@
 		80FF0AEC2A22B5B9002025C5 /* PokemonWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokemonWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80FF0AEF2A22B5B9002025C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80FF0AF12A22B5B9002025C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		80FF0AF32A22B5B9002025C5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		80FF0AF62A22B5B9002025C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		80FF0AF82A22B5B9002025C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80FF0AFB2A22B5B9002025C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		80FF0B0C2A22B5BA002025C5 /* PokemonWorldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokemonWorldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		80FF0B102A22B5BA002025C5 /* PokemonWorldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonWorldUITests.swift; sourceTree = "<group>"; };
 		80FF0B122A22B5BA002025C5 /* PokemonWorldUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonWorldUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		80FF0B202A22B602002025C5 /* PokemonListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonListTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +99,9 @@
 		80FF0AEE2A22B5B9002025C5 /* PokemonWorld */ = {
 			isa = PBXGroup;
 			children = (
+				80FF0B1F2A22B5F1002025C5 /* Controllers */,
 				80FF0AEF2A22B5B9002025C5 /* AppDelegate.swift */,
 				80FF0AF12A22B5B9002025C5 /* SceneDelegate.swift */,
-				80FF0AF32A22B5B9002025C5 /* ViewController.swift */,
 				80FF0AF52A22B5B9002025C5 /* Main.storyboard */,
 				80FF0AF82A22B5B9002025C5 /* Assets.xcassets */,
 				80FF0AFA2A22B5B9002025C5 /* LaunchScreen.storyboard */,
@@ -125,6 +125,14 @@
 				80FF0B122A22B5BA002025C5 /* PokemonWorldUITestsLaunchTests.swift */,
 			);
 			path = PokemonWorldUITests;
+			sourceTree = "<group>";
+		};
+		80FF0B1F2A22B5F1002025C5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				80FF0B202A22B602002025C5 /* PokemonListTableViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +266,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80FF0AF42A22B5B9002025C5 /* ViewController.swift in Sources */,
 				80FF0AF02A22B5B9002025C5 /* AppDelegate.swift in Sources */,
+				80FF0B212A22B602002025C5 /* PokemonListTableViewController.swift in Sources */,
 				80FF0AF22A22B5B9002025C5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
