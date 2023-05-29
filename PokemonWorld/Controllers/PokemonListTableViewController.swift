@@ -8,8 +8,7 @@
 import UIKit
 
 class PokemonListTableViewController: UITableViewController{
-    
-    var index : Int?
+
     var pokemonListViewModel : PokemonListViewModel?
     
     override func viewDidLoad() {
@@ -29,12 +28,11 @@ class PokemonListTableViewController: UITableViewController{
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        index = indexPath.row
-        performSegue(withIdentifier: "toDetail", sender: nil)
+        performSegue(withIdentifier: "toDetail", sender: indexPath.row)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let pokemonVM = pokemonListViewModel?.itemAtIndex(index!)
+        let pokemonVM = pokemonListViewModel?.itemAtIndex(sender as! Int)
         let builder = DetailVMBuilder(url: pokemonVM!.baseURL)
         if segue.identifier == "toDetail" {
             let destVC = segue.destination as! DetailViewController
